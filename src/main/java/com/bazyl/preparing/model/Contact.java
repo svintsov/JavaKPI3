@@ -20,6 +20,7 @@ public class Contact {
     private String index;
     private String commentary;
     private String group;
+    //TODO change Date type to SimpleDateFormat
     private Date lastEditDate;
 
 

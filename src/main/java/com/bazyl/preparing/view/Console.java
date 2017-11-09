@@ -7,7 +7,7 @@ import java.util.ResourceBundle;
 public class Console {
 
     static final String MESSAGES_BUNDLE_NAME = "messages";
-    static final ResourceBundle bundle =
+    public static final ResourceBundle bundle =
             ResourceBundle.getBundle(
                     MESSAGES_BUNDLE_NAME,
                     new Locale("ua"));  // Ukrainian
@@ -28,6 +28,7 @@ public class Console {
     public static String STREET_INPUT = "input.street";
     public static String HOUSE_INPUT = "input.house";
     public static String APPARTMENT_INPUT = "input.appartment";
+    public static String DATE_FORMAT = "date.format";
 
     public static void printMessage(String message) {
         try {

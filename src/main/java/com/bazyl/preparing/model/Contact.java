@@ -1,8 +1,6 @@
 package com.bazyl.preparing.model;
 
 
-import java.util.Date;
-
 public class Contact {
 
     private String name;
@@ -21,10 +19,10 @@ public class Contact {
     private String commentary;
     private String group;
     //TODO change Date type to SimpleDateFormat
-    private Date lastEditDate;
+    private String lastEditDate;
 
 
-    public void setLastEditDate(Date lastEditDate) {
+    public void setLastEditDate(String lastEditDate) {
         this.lastEditDate = lastEditDate;
     }
 

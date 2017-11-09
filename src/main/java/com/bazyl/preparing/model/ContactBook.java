@@ -6,17 +6,17 @@ import java.util.List;
 
 public class ContactBook {
 
-    private List<Contact> book;
+  private List<Contact> book;
 
-    public ContactBook(){
-        book = new ArrayList<Contact>();
-    }
+  public ContactBook() {
+    book = new ArrayList<Contact>();
+  }
 
-    public void addContact(Contact contact){
-        book.add(contact);
-    }
+  public void addContact(Contact contact) {
+    book.add(contact);
+  }
 
-    public void deleteContact(Contact contact){
-        book.remove(contact);
-    }
+  public void deleteContact(Contact contact) {
+    book.remove(contact);
+  }
 }

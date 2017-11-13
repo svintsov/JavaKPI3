@@ -29,7 +29,7 @@ public class Controller {
         contactBook.addContact(validateFormAndGetContact(scanner));
         return;
       } catch (NicknameAlreadyExistException e) {
-        System.out.println(e.toString());
+        System.err.println(e.toString());
       }
     }
 

@@ -6,6 +6,7 @@ public class NicknameAlreadyExistException extends Exception {
   private String nickname;
 
   public NicknameAlreadyExistException(String message, String nickname) {
+    super(message);
     this.message = message;
     this.nickname = nickname;
   }

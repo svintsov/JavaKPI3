@@ -3,6 +3,7 @@ package com.bazyl.preparing.controller;
 
 import com.bazyl.preparing.model.Contact;
 import com.bazyl.preparing.model.ContactBook;
+import com.bazyl.preparing.model.NicknameAlreadyExistException;
 import com.bazyl.preparing.view.Console;
 import java.text.SimpleDateFormat;
 import java.util.Date;
@@ -23,7 +24,15 @@ public class Controller {
 
   public void processUser() {
     Scanner scanner = new Scanner(System.in);
-    contactBook.addContact(validateFormAndGetContact(scanner));
+    while (true) {
+      try {
+        contactBook.addContact(validateFormAndGetContact(scanner));
+        return;
+      } catch (NicknameAlreadyExistException e) {
+        System.out.println(e.toString());
+      }
+    }
+
   }
 
   Contact validateFormAndGetContact(Scanner scanner) {

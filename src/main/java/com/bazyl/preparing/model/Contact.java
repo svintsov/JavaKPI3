@@ -20,7 +20,6 @@ public class Contact {
   private String group;
   private String lastEditDate;
 
-
   public void setLastEditDate(String lastEditDate) {
     this.lastEditDate = lastEditDate;
   }
@@ -97,5 +96,67 @@ public class Contact {
     this.commentary = commentary;
   }
 
+  public String getName() {
+    return name;
+  }
 
+  public String getSurname() {
+    return surname;
+  }
+
+  public String getSecondName() {
+    return secondName;
+  }
+
+  public String getNickname() {
+    return nickname;
+  }
+
+  public String getSkype() {
+    return skype;
+  }
+
+  public String getEmail() {
+    return email;
+  }
+
+  public String getHomePhone() {
+    return homePhone;
+  }
+
+  public String getMobilePhone() {
+    return mobilePhone;
+  }
+
+  public String getCity() {
+    return city;
+  }
+
+  public String getHouse() {
+    return house;
+  }
+
+  public String getStreet() {
+    return street;
+  }
+
+  public String getAppartment() {
+    return appartment;
+  }
+
+  public String getIndex() {
+    return index;
+  }
+
+  public String getCommentary() {
+    return commentary;
+  }
+
+  public String getGroup() {
+    return group;
+  }
+
+  public String getLastEditDate() {
+    return lastEditDate;
+  }
 }

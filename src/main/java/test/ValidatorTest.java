@@ -1,5 +1,4 @@
-package com.bazyl.preparing.controller;
-
+import com.bazyl.preparing.controller.Validator;
 import org.junit.Assert;
 import org.junit.Test;
 

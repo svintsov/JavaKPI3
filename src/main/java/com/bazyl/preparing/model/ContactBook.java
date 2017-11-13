@@ -12,7 +12,14 @@ public class ContactBook {
     book = new ArrayList<Contact>();
   }
 
-  public void addContact(Contact contact) {
+  public void addContact(Contact contact)
+      throws NicknameAlreadyExistException {
+    for (Contact entry : book) {
+      if (entry.getNickname().equals(contact.getNickname())) {
+        throw new NicknameAlreadyExistException("Cannot add the new contact.",
+            contact.getNickname());
+      }
+    }
     book.add(contact);
   }
 
